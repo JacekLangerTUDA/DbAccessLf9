@@ -13,10 +13,19 @@
         <h2>Register a new account</h2>
         <div>
             <input required class="cust-tb" type="text" placeholder="Username"></input>
-            <input class="cust-tb" type="text" id="inp-email" placeholder="email"></input>
-            <input required class="cust-tb" type="text" id="inp-email-control" placeholder="confirm your email"></input>
-            <input required class="cust-tb" id="inp-password" type="password" placeholder="password"></input>
-            <input class="cust-tb" type="password" id="inp-password-control"
+            <input class="cust-tb" type="email" id="inp-email" placeholder="example@edarling.com"></input>
+            <input required class="cust-tb" type="email" id="inp-email-control" placeholder="confirm your email"></input>
+            <input required
+                   class="cust-tb"
+                   minlength="8"
+                   id="inp-password"
+                   type="password"
+                   autocomplete="new-password"
+                   pattern="[0-9a-fA-F]{8,999}"
+                   placeholder="password"></input>
+            <input class="cust-tb"
+                   type="password"
+                   id="inp-password-control"
                    placeholder="confirm your password"></input>
         </div>
         <div style="display: inline">

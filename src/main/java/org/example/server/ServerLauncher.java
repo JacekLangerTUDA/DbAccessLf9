@@ -45,9 +45,8 @@ public class ServerLauncher {
         InputStream requestStream = exchange.getRequestBody();
 
         try {
-
             String req = new String(requestStream.readAllBytes());
-            sendResponse(exchange.getRequestURI().getPath(),exchange);
+            sendResponse(exchange.getRequestURI().getPath()+".html",exchange);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -57,7 +56,6 @@ public class ServerLauncher {
         OutputStream outputStream = exchange.getResponseBody();
         try {
             byte[] bytes = Files.readAllBytes(Path.of(TEMPLATE_PATH + filePath));
-
             System.out.printf("=> loading %s \n", TEMPLATE_PATH + "register.html");
             exchange.sendResponseHeaders(200, bytes.length);
             outputStream.write(bytes);

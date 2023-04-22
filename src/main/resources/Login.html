@@ -8,7 +8,7 @@
 </head>
 <body>
 <canvas id="bg-canvas"></canvas>
-<form action="Login.html" enctype="application/x-www-form-urlencoded" method="post">
+<!--<form action="/login" enctype="text/plain" method="post">-->
 
     <div class="vert-stack">
         <div>
@@ -18,20 +18,15 @@
             <input class="cust-tb" type="text" name="tbUsername" id="user-tb" placeholder="Username">
         </div>
         <div>
-            <input class="cust-tb" type="password" placeholder="Password"></input>
+            <input class="cust-tb" type="password"  placeholder="Password"></input>
         </div>
         <div>
 
-            <button class="cust-button">Login</button>
+            <button class="cust-button" onclick="sendRequest()">Login</button>
             <a href="/signup">No Account? Register now for free.</a>
         </div>
     </div>
-</form>
+<!--</form>-->
+<script src="/static/requests.js"></script>
 </body>
-<script type="text/ecmascript-6">
-    const canv = document.querySelector('#bg-canvas');
-    const ctx = canv.getContext("2d");
-
-    // draw vector field and create turbulence with moving particles.
-</script>
 </html>
