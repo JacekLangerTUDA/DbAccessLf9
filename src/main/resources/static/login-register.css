@@ -1,0 +1,74 @@
+body{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(145deg, #550033 10%, #330055);
+    box-sizing: border-box;
+}
+#bg-canvas{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4{
+
+    font-family: "JetBrains Mono",Arial, sans-serif;
+    color: white;
+}
+.cust-tb{
+    border-radius: 2px 2px 0 0;
+    text-align: center;
+    margin: 5px;
+    caret: #fff;
+    padding: 10px;
+    font-size: 1.2em;
+    border-style:solid;
+    border-width: 0 0 1px 0;
+    background: transparent;
+    font-family: "JetBrains Mono",Arial, sans-serif;
+
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none; /*remove the resize handle on the bottom right*/
+}
+
+.cust-button{
+    padding: 10px 15px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin:1.4rem;
+    font-family: "JetBrains Mono",Arial, sans-serif;
+}
+
+.cust-button:hover{
+    background: #ddd;
+    filter:drop-shadow(1px 1px 2px rgba(171,171,221,.5));
+}
+
+a{
+    color:black;
+    text-decoration:  none;
+    cursor: pointer ;
+    padding: 5px;
+    margin:5px;
+    display:table-row;
+    font-weight: bold;
+    font-family: "JetBrains Mono",Arial, sans-serif;
+}
+
+.vert-stack {
+    position: relative;
+    margin:1.3rem;
+    padding:1.3em;
+    background: rgba(255,255,255, .16);
+    backdrop-filter: blur(5px);
+    border-radius: 3px;
+    max-width: 270px;
+}
