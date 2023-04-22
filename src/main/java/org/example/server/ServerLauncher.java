@@ -1,4 +1,4 @@
-package org.example.dal.server;
+package org.example.server;
 
 import com.sun.net.httpserver.HttpContext;
 import com.sun.net.httpserver.HttpExchange;

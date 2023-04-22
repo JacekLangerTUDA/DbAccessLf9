@@ -3,8 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="/static/login-register.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+            integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
 </head>
 <body>
+<form action="/register" method="post">
+    <div class="vert-stack">
+        <h2>Register a new account</h2>
+        <div>
+            <input required class="cust-tb" type="text" placeholder="Username"></input>
+            <input class="cust-tb" type="text" id="inp-email" placeholder="email"></input>
+            <input required class="cust-tb" type="text" id="inp-email-control" placeholder="confirm your email"></input>
+            <input required class="cust-tb" id="inp-password" type="password" placeholder="password"></input>
+            <input class="cust-tb" type="password" id="inp-password-control"
+                   placeholder="confirm your password"></input>
+        </div>
+        <div style="display: inline">
+            <a style="margin-left:auto;margin-right: auto; " href="/">Return to Login ...</a>
+            <button id="register-button" class="cust-button">Send</button>
+        </div>
+    </div>
+</form>
 
+<!--todo add validation-->
 </body>
 </html>

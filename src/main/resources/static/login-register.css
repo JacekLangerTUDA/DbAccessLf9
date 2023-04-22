@@ -27,7 +27,7 @@ h1,h2,h3,h4{
     border-width: 0 0 1px 0;
     background: transparent;
     font-family: "JetBrains Mono",Arial, sans-serif;
-
+    color:white;
     outline: none;
 
     -webkit-box-shadow: none;
@@ -37,6 +37,10 @@ h1,h2,h3,h4{
     resize: none; /*remove the resize handle on the bottom right*/
 }
 
+.cust-tb:focus{
+    border-color: white;
+}
+
 .cust-button{
     padding: 10px 15px;
     border-radius: 2px;
@@ -44,6 +48,7 @@ h1,h2,h3,h4{
     cursor: pointer;
     font-weight: bold;
     margin:1.4rem;
+    position: relative;
     font-family: "JetBrains Mono",Arial, sans-serif;
 }
 
@@ -53,12 +58,12 @@ h1,h2,h3,h4{
 }
 
 a{
-    color:black;
+    color:#dddddd;
     text-decoration:  none;
     cursor: pointer ;
     padding: 5px;
     margin:5px;
-    display:table-row;
+    min-width: 50%;
     font-weight: bold;
     font-family: "JetBrains Mono",Arial, sans-serif;
 }
