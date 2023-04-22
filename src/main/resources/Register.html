@@ -8,32 +8,36 @@
             integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
 </head>
 <body>
-<form action="/register" method="post">
-    <div class="vert-stack">
-        <h2>Register a new account</h2>
-        <div>
-            <input required class="cust-tb" type="text" placeholder="Username"></input>
-            <input class="cust-tb" type="email" id="inp-email" placeholder="example@edarling.com"></input>
-            <input required class="cust-tb" type="email" id="inp-email-control" placeholder="confirm your email"></input>
-            <input required
-                   class="cust-tb"
-                   minlength="8"
-                   id="inp-password"
-                   type="password"
-                   autocomplete="new-password"
-                   pattern="[0-9a-fA-F]{8,999}"
-                   placeholder="password"></input>
-            <input class="cust-tb"
-                   type="password"
-                   id="inp-password-control"
-                   placeholder="confirm your password"></input>
+<div class="center">
+    <form action="/register" method="post">
+
+        <div class="vert-stack">
+            <h2>Register a new account</h2>
+            <div>
+                <input required class="cust-tb" type="text" placeholder="Username"></input>
+                <input class="cust-tb" type="email" id="inp-email" placeholder="example@edarling.com"></input>
+                <input required class="cust-tb" type="email" id="inp-email-control"
+                       placeholder="confirm your email"></input>
+                <input required
+                       class="cust-tb"
+                       minlength="8"
+                       id="inp-password"
+                       type="password"
+                       autocomplete="new-password"
+                       pattern="[0-9a-fA-F]{8,999}"
+                       placeholder="password"></input>
+                <input class="cust-tb"
+                       type="password"
+                       id="inp-password-control"
+                       placeholder="confirm your password"></input>
+            </div>
+            <div style="display: inline">
+                <button id="register-button" class="cust-button">Send</button>
+                <a  href="/">Return to Login ...</a>
+            </div>
         </div>
-        <div style="display: inline">
-            <a style="margin-left:auto;margin-right: auto; " href="/">Return to Login ...</a>
-            <button id="register-button" class="cust-button">Send</button>
-        </div>
-    </div>
-</form>
+    </form>
+</div>
 
 <!--todo add validation-->
 </body>

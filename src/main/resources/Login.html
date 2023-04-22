@@ -4,28 +4,39 @@
     <meta charset="UTF-8">
     <title>Login</title>
     <link rel="stylesheet" href="static/login-register.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+            integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+            crossorigin="anonymous"></script>
 </head>
 <body>
 <canvas id="bg-canvas"></canvas>
 <!--<form action="/login" enctype="text/plain" method="post">-->
-
+<div class="center">
     <div class="vert-stack">
+
         <div>
             <h2>Login</h2>
         </div>
         <div>
-            <input class="cust-tb" type="text" name="tbUsername" id="user-tb" placeholder="Username">
+            <input class="cust-tb"
+                   type="text"
+                   name="tbUsername"
+                   id="user-tb"
+                   placeholder="Username">
         </div>
         <div>
-            <input class="cust-tb" type="password"  placeholder="Password"></input>
+            <input class="cust-tb"
+                   type="password"
+                   placeholder="Password"></input>
         </div>
         <div>
 
-            <button class="cust-button" onclick="sendRequest()">Login</button>
+            <button class="cust-button"
+                    onclick="sendRequest()">Login</button>
             <a href="/signup">No Account? Register now for free.</a>
         </div>
     </div>
+</div>
 <!--</form>-->
 <script src="/static/requests.js"></script>
 </body>
