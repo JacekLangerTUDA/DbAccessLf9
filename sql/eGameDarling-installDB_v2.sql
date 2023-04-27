@@ -45,7 +45,7 @@ CREATE TABLE T_Accounts
 (
 	p_account_id INTEGER AUTO_INCREMENT PRIMARY KEY,
 	email        VARCHAR(50),
-	passwort     VARCHAR(50),
+	passwort     VARCHAR(128),
 	nickname     VARCHAR(50),
 	avatar       BLOB
 );

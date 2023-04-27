@@ -5,40 +5,44 @@
     <title>Title</title>
     <link rel="stylesheet" href="/static/login-register.css">
     <script src="https://code.jquery.com/jquery-3.6.4.js"
-            integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+            integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+            crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="center">
-    <form action="/register" method="post">
+<!--    <form action="/register" method="post">-->
 
         <div class="vert-stack">
             <h2>Register a new account</h2>
             <div>
-                <input required class="cust-tb" type="text" placeholder="Username"></input>
-                <input class="cust-tb" type="email" id="inp-email" placeholder="example@edarling.com"></input>
-                <input required class="cust-tb" type="email" id="inp-email-control"
-                       placeholder="confirm your email"></input>
+                <input required class="cust-tb" type="text" id="tb-username" placeholder="Username"></input>
+                <input class="cust-tb" type="email" id="tb-email1" placeholder="example@edarling.com"></input>
+                <input required class="cust-tb" type="email" id="tb-email2"
+                       placeholder="confirm your email" onfocusout="verifyEmail()"></input>
                 <input required
                        class="cust-tb"
                        minlength="8"
-                       id="inp-password"
+                       id="inp-password1"
                        type="password"
                        autocomplete="new-password"
                        pattern="[0-9a-fA-F]{8,999}"
                        placeholder="password"></input>
                 <input class="cust-tb"
                        type="password"
-                       id="inp-password-control"
+                       id="inp-password2"
+                       onfocusout="verifyPassword()"
                        placeholder="confirm your password"></input>
             </div>
             <div style="display: inline">
-                <button id="register-button" class="cust-button">Send</button>
+                <button id="register-button" onclick="sendRegisterRequest()" class="cust-button">Send</button>
                 <a  href="/">Return to Login ...</a>
             </div>
+            <p id="error-msg"></p>
         </div>
-    </form>
-</div>
 
+<!--    </form>-->
+</div>
+<script src="/static/requests.js"></script>
 <!--todo add validation-->
 </body>
 </html>

@@ -10,7 +10,7 @@
 </head>
 <body>
 <canvas id="bg-canvas"></canvas>
-<!--<form action="/login" enctype="text/plain" method="post">-->
+<!--<form action="/"  id="login-form" enctype="text/plain" method="post">-->
 <div class="center">
     <div class="vert-stack">
 
@@ -32,12 +32,15 @@
         <div>
 
             <button class="cust-button"
-                    onclick="sendRequest()">Login</button>
+                    onclick="sendLoginRequest()">Login</button>
             <a href="/signup">No Account? Register now for free.</a>
         </div>
+
+        <p id="error-msg" style="color: red"></p>
     </div>
 </div>
 <!--</form>-->
 <script src="/static/requests.js"></script>
+<!--<script type="text/ecmascript-6" src="/static/requests.js"></script>-->
 </body>
 </html>

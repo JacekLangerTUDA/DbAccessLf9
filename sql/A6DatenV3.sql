@@ -1,6 +1,6 @@
 USE a34;
 
-INSERT INTO `T_Accounts` (`p_account_id`, `email`, `passwort`, `nickname`) 
+INSERT INTO T_Accounts (`p_account_id`, `email`, `passwort`, `nickname`)
 VALUES
   (1,"ut.molestie.in@protonmail.org","risus","Lenore"),
   (2,"dolor@hotmail.couk","turpis","MacKenzie"),
